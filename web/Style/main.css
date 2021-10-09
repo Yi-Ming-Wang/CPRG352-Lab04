@@ -1,0 +1,112 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 27-Sep-2021, 3:48:36 PM
+    Author     : adamw
+*/
+/* The styles for the elements */
+@media all
+{
+body
+{
+   background-color: rgba(222, 195, 235, 0.2);
+   z-index: -1;/* -1 means the image will place behind the content" */
+}
+body::after
+{
+   background: url("photos/FIG_1.jpg");/*REF to Web: https://music.amazon.ca/albums/B097VGBHSZ*/
+   position: absolute;
+   -webkit-background-size: cover; /*Different Vendor*/
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   top:0;
+   left:0;
+   bottom:0;
+   right:0; 
+   content: "";
+   opacity: 0.45;
+   z-index: -1;/* -1 means the image will place behind the content" */
+
+}
+
+body { 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 85%;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+h1 {     
+    font-size: 140%;
+    color: teal;
+    margin-bottom: .5em;
+    width: 80%;
+    margin: 5% auto;
+    background: rgba(240, 224, 203, 0.5);
+    padding: 30px;
+    text-align: center;
+}
+label {
+    float: left;
+    width: 7em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+input[type="text"]{  /* An attribute selector */
+    width: 15em;
+    margin-left: 0.5em;    
+    margin-bottom: 0.5em;
+    background-color: rgba(173, 240, 182, 0.6);
+}
+span {
+    margin-left: 0.5em;    
+    margin-bottom: 0.5em;    
+}
+br {
+    clear: both;
+}
+
+div{
+    width: 80%;
+    margin: 5% auto;
+    background: rgba(240, 224, 203, 0.5);
+    padding: 30px;
+    text-align: center;
+}
+/* The styles for the classes */
+.pad_top {
+    padding-top: 0.25em;
+}
+.margin_left {
+    margin-left: 0.5em;
+}
+
+a:link
+{
+   color:darksalmon;
+   text-decoration:none;
+}
+
+a:visited
+{
+   color:rgba(0,64,87,30);
+}
+
+a:hover
+{
+   color:pink;
+   text-decoration: underline overline dotted rgba(3, 80, 129, 0.94);
+}
+
+a:active
+{
+   color:yellow;
+   text-decoration: none;
+}
+
+}
